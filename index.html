@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <p>
+                Register for
+            </p>
+            <h1>Full Stack Conference</h1>
+        </div>
+    </header>
+
+    <form action="index.html" method="POST">
+        <p>*-required field</p>
+        <div class="first-two-fields">
+            <fieldset>
+                <div class="basic-info">
+                    <legend>Basic info</legend>
+
+                    <label for="name">Name: *</label>
+                    <input type="text" id="name" name="user_name"> <br>
+
+                    <label for="mail">Email Address: *</label>
+                    <input type="email" id="mail" name="user_mail"> <br>
+                </div>
+
+
+
+                <div class="job-role">
+                    <label for="job">Job Role</label>
+                    <select name="job_role" id="job"> 
+                <option value="" disabled selected hidden>Select Job Role</option>
+                <option value="fullstack">FullStack JavaScript Developer</option>
+                <option value="frontend">Front-End Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="student">Student</option>
+                <option value="other-job_role">Other</option>
+            </select> <br>
+
+                    <input type="text" id="job_role" name="other_job_role" placeholder="Other Job Role?">
+                </div>
+
+            </fieldset>
+
+            <fieldset class="second-field">
+                <legend>T-Shirt Info</legend>
+
+                <div class="sec-field-cards">
+                    <div class="sec-field-card">
+                        <label for="size">Size:</label>
+                        <select name="tshirt_size" id="size">
+                <option value="" disabled selected hidden>M</option>
+                 <option value="size-XS">XS</option>
+            <option value="size-S">S</option>
+            <option value="size-M">M</option>
+            <option value="size-L">L</option>
+            <option value="size-XL">XL</option>
+            </select>
+                    </div>
+
+
+                    <div class="sec-field-card">
+                        <label for="design">Design:</label>
+                        <select name="tshirt_design" id="design">
+                <option value="" disabled selected hidden>Select Theme</option>
+                <option value="waves-theme">Waves</option>
+            <option value="tropical-theme">Tropical</option>
+            <option value="starWars-theme">Star Wars</option>
+            <option value="army-theme">Army</option>
+            </select>
+                    </div>
+                </div>
+
+                <label for="color">Color:</label>
+                <select name="tshirt_color" id="color">
+                <option value="" disabled selected hidden>Select a design theme above</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="black">Black</option>
+                <option value="aquamarine">Aquamarine</option>
+            </select>
+
+            </fieldset>
+        </div>
+
+
+        <fieldset>
+            <legend>Register for Activities *</legend>
+
+            <div class="activity-boxes">
+                <div class="activity-box a1">
+                    <div class="first-line">
+                        <div class="checkbox"> <input type="checkbox" value="main-conference" name="user_activities_conf" id="conferecnce"><label for="conference" class="activities">Main Conference</label></div>
+
+                        <img src="img/javascript.png">
+                    </div>
+
+                    <div class="second-line">
+                        <p></p>
+                        <p>$200</p>
+                    </div>
+                </div>
+
+                <div class="activity-box a2">
+                    <div class="first-line">
+                        <div class="checkbox"> <input type="checkbox" value="js-library" name="user_activities_js-lb" id="js-lib"><label for="js-lib" class="activities">JavaScript Labraries Workshop</label></div>
+                        <img src="img/physics.png">
+                    </div>
+
+                    <div class="second-line">
+                        <p>Tuesday 9am-12am</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+
+                <div class="activity-box a3">
+                    <div class="first-line">
+                        <div class="checkbox"><input type="checkbox" value="node-js" name="user_activities_node" id="node"><label for="node" class="activities">Node.js Workshop</label></div>
+                        <img src="img/nodejs.png">
+                    </div>
+
+                    <div class="second-line">
+                        <p>Tuesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+
+                <div class="activity-box a4">
+                    <div class="first-line">
+                        <div class="checkbox"><input type="checkbox" value="js-frameworks" name="user_activities_frameworks" id="frame"><label for="frame" class="activities">JavaScript Frameworks Workshop</label></div>
+                        <img src="img/Angular_full_color_logo.svg.png">
+                    </div>
+
+                    <div class="second-line">
+                        <p>Tuesday 9am-12am</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+
+                <div class="activity-box a5">
+                    <div class="first-line">
+                        <div class="checkbox"><input type="checkbox" value="tools-ws" name="user_activities_tools" id="tools"><label for="tools" class="activities">Build tools Workshop</label></div>
+                        <img src="img/settings.png">
+                    </div>
+
+                    <div class="second-line">
+                        <p>Tuesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+
+                </div>
+
+                <div class="activity-box a6">
+
+                    <div class="first-line">
+                        <div class="checkbox"><input type="checkbox" value="npm-ws" name="user_activities_npm" id="npm"><label for="npm" class="activities">npm Workshop</label></div>
+                        <img src="img/1200px-Npm-logo.svg.png">
+                    </div>
+
+                    <div class="second-line">
+                        <p>Wednesday 9am-12am</p>
+                        <p>$100</p>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="activity-box a7">
+                    <div class="first-line">
+                        <div class="checkbox"><input type="checkbox" value="express-ws" name="user_activities_express" id="express"><label for="express" class="activities">Build tools Workshop</label></div>
+                        <img src="img/expressjslogo.png">
+                    </div>
+
+                    <div class="second-line">
+                        <p>Wednesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </fieldset>
+
+        <p class="total">Total: $0</p>
+
+        <fieldset class="payment">
+            <legend>Payment Info</legend>
+
+            <div class="payment-cards">
+                <div class="p1">
+                    <label for="payment-meth">I'm going to pay with:</label>
+                    <select name="user_pay_method" id="payment-meth">
+                <option value="" disabled selected hidden>Select Payment Method</option>
+                <option value="paypal">PayPal</option>
+                <option value="bitcon">Bitcon</option>
+            </select>
+                </div>
+
+                <div class="p2">
+                    <label for="exp-date">Expiration Date:</label>
+                    <select name="user_exp_date" id="exp-date">
+                <option value="" disabled selected hidden>Select Date</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+                </div>
+
+                <div class="p3">
+                    <label for="exp-y">Expiration Year</label>
+                    <select name="user_exp_y" id="exp-y">
+                <option value="" disabled selected hidden>Select Year</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+                </div>
+
+                <div class="p4">
+                    <label for="card-number">Card Number: *</label>
+                    <input type="tel" id="card-nmb" name="user_card_number">
+                </div>
+
+                <div class="p5">
+                    <label for="zip">Zip Code: *</label>
+                    <input type="tel" id="zip" name="user_zip">
+                </div>
+
+                <div class="p6">
+                    <label for="cvv">CVV: *</label>
+                    <input type="tel" id="cvv" name="user_cvv">
+                </div>
+            </div>
+
+
+        </fieldset>
+
+        <div class="pay-alert">
+            <h2>PayPal</h2>
+            <p>
+                If you selected the PayPal option we'll take you to PayPal's site to set up your billing information, when you click "Register" below
+            </p>
+        </div>
+
+        <div class="pay-alert">
+            <h2>Bitcoin</h2>
+            <p>
+                If you selected the Bitcoin option we'll take you to Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transcations will be final
+            </p>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>
