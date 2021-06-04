@@ -26,8 +26,9 @@
 
     <form action="index.html" method="POST">
         <p>*-required field</p>
-        <div class="first-two-fields">
-            <fieldset>
+
+        <fieldset>
+            <div class="first-two-fields">
                 <div class="basic-info">
                     <legend>Basic info</legend>
 
@@ -41,8 +42,9 @@
 
 
                 <div class="job-role">
-                    <label for="job">Job Role</label>
-                    <select name="job_role" id="job"> 
+                    <div class="select-job-role">
+                        <label for="job">Job Role</label>
+                        <select name="job_role" id="job"> 
                 <option value="" disabled selected hidden>Select Job Role</option>
                 <option value="fullstack">FullStack JavaScript Developer</option>
                 <option value="frontend">Front-End Developer</option>
@@ -50,19 +52,21 @@
                 <option value="student">Student</option>
                 <option value="other-job_role">Other</option>
             </select> <br>
+                    </div>
 
-                    <input type="text" id="job_role" name="other_job_role" placeholder="Other Job Role?">
+
+                    <div class="oth"><input type="text" id="job_role" name="other_job_role" placeholder="Other Job Role?"></div>
                 </div>
 
-            </fieldset>
 
-            <fieldset class="second-field">
-                <legend>T-Shirt Info</legend>
 
-                <div class="sec-field-cards">
-                    <div class="sec-field-card">
-                        <label for="size">Size:</label>
-                        <select name="tshirt_size" id="size">
+                <div class="second-field">
+                    <legend>T-Shirt Info</legend>
+
+                    <div class="sec-field-cards">
+                        <div class="sec-field-card">
+                            <label for="size">Size:</label>
+                            <select name="tshirt_size" id="size">
                 <option value="" disabled selected hidden>M</option>
                  <option value="size-XS">XS</option>
             <option value="size-S">S</option>
@@ -70,23 +74,23 @@
             <option value="size-L">L</option>
             <option value="size-XL">XL</option>
             </select>
-                    </div>
+                        </div>
 
 
-                    <div class="sec-field-card">
-                        <label for="design">Design:</label>
-                        <select name="tshirt_design" id="design">
+                        <div class="sec-field-card">
+                            <label for="design">Design:</label>
+                            <select name="tshirt_design" id="design">
                 <option value="" disabled selected hidden>Select Theme</option>
                 <option value="waves-theme">Waves</option>
             <option value="tropical-theme">Tropical</option>
             <option value="starWars-theme">Star Wars</option>
             <option value="army-theme">Army</option>
             </select>
+                        </div>
                     </div>
-                </div>
 
-                <label for="color">Color:</label>
-                <select name="tshirt_color" id="color">
+                    <label for="color">Color:</label>
+                    <select name="tshirt_color" id="color">
                 <option value="" disabled selected hidden>Select a design theme above</option>
                 <option value="blue">Blue</option>
                 <option value="red">Red</option>
@@ -94,9 +98,12 @@
                 <option value="black">Black</option>
                 <option value="aquamarine">Aquamarine</option>
             </select>
+                </div>
 
-            </fieldset>
-        </div>
+            </div>
+
+        </fieldset>
+
 
 
         <fieldset>

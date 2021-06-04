@@ -199,11 +199,21 @@
                     }
                     .second-field {
                         max-height: 250px;
+                        padding-left: 2.2em;
                     }
                     .job-role {
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
+                    }
+                    .select-job-role {
+                        width: 100%;
+                        max-width: 337px;
+                    }
+                    .oth {
+                        padding-top: 36px;
+                        width: 100%;
+                        max-width: 337px;
                     }
                     .a1 {
                         grid-area: a1;
